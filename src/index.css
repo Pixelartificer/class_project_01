@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100..900&family=Roboto:wght@100..900&display=swap");
-
 @import "tailwindcss";
 
-
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100..900&family=Roboto:wght@100..900&display=swap");
 
 
 @theme {
@@ -16,6 +11,7 @@
   --color-blackText: #112F42;
   --color-lightBlackText: #495E6C;
   --color-blueText: #2C83BB;
+  --color-darkBlueText: #112F42;
 
   --text-text52: 52px;
   --text-text48: 48px;
