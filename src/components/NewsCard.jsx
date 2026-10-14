@@ -2,7 +2,7 @@ import React from 'react'
 import { HiOutlineCalendar } from 'react-icons/hi';
 import { FiChevronRight } from 'react-icons/fi';
 
-const NewsCard = ({image}) => {
+const NewsCard = ({image, title, authorName, authorImg, date, description}) => {
   return (
     <>
       <div className="w-full max-w-[366px] h-[438px] bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col justify-between overflow-hidden">
@@ -16,31 +16,31 @@ const NewsCard = ({image}) => {
         <div>
           {/* Title */}
           <h2 className="text-text18 font-bold text-blackText leading-snug">
-            Where Should I Buy Next?
+            {title}
           </h2>
 
           {/* Author and Date Meta Info */}
           <div className="flex items-center gap-4 mt-3 mb-3 text-sm text-blackText">
             {/* Author */}
             <div className="flex items-center gap-2">
-              <img
-                src="https://i.pravatar.cc/100?img=12"
-                alt="Carter Rosser"
-                className="w-8 h-8 rounded-full object-cover"
-              />
-              <span className="font-semibold text-blackText">Carter Rosser</span>
+             <img 
+                  src={authorImg} 
+                  alt={authorName} 
+                  className="w-8 h-8 rounded-full object-cover" 
+                />
+              <span className="font-semibold text-blackText">{authorName}</span>
             </div>
 
             {/* Date */}
             <div className="flex items-center gap-1.5 text-lightBlackText font-medium">
               <HiOutlineCalendar className="w-4 h-4 text-blackText" />
-              <span className="text-blackText">24/08/2021</span>
+              <span className="text-blackText">{date}</span>
             </div>
           </div>
 
           {/* Description */}
           <p className="text-lightBlackText text-sm leading-relaxed line-clamp-2">
-            From romantic getaways to adventurous hikes, find your next...
+           {description}
           </p>
         </div>
 
