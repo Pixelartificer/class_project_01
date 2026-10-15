@@ -5,13 +5,14 @@ import PricingCard from "./components/PricingCard";
 import ProductCard from "./components/ProductCard";
 import ClientsCard from "./components/ClientsCard";
 import IndustriesCard from "./components/IndustriesCard";
+import CounteerCard from "./components/CounterCard";
 
 const App = () => {
   return (
   
-      <div className=" bg-bgGreen flex flex-wrap gap-3">
+      <>
         <ul className="flex">
-          <ListItem />
+          <ListItem classname= "bg-bgGreen" text="Home" type/>
         </ul>
 
         <Button text="Read More" />
@@ -67,6 +68,13 @@ const App = () => {
       />
 
 
+    
+      <CounteerCard
+        icon="/Image/img.png" 
+        number="70+"
+        label="Professionals"
+      />
+    
 
 
 
@@ -75,7 +83,9 @@ const App = () => {
 
 
 
-      </div>
+
+
+      </>
    
   );
 };
