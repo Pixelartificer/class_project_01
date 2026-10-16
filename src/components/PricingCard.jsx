@@ -1,11 +1,11 @@
-import React from 'react'
+
 import { FiCheck } from 'react-icons/fi';
 import { RxCross2 } from "react-icons/rx";
 
 const PricingCard = ({title, price, period, feature1, feature2, feature3, feature4, buttonText}) => {
   return (
     <>
-      <div className="w-full max-w-[366px] h-[510px] bg-[#F8F9FA] rounded-2xl shadow-sm border border-gray-200 p-6 flex flex-col justify-between">
+      <div className="w-full max-w-91.5 h-127.5 bg-[#F8F9FA] rounded-2xl shadow-sm border border-gray-200 p-6 flex flex-col justify-between">
       <div>
         {/* Plan Title */}
         <h3 className="text-22 text font-bold text-bgGreen mb-3 font-raleway">

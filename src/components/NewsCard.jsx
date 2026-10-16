@@ -1,13 +1,13 @@
-import React from 'react'
+
 import { HiOutlineCalendar } from 'react-icons/hi';
 import { FiChevronRight } from 'react-icons/fi';
 
 const NewsCard = ({image, title, authorName, authorImg, date, description}) => {
   return (
     <>
-      <div className="w-full max-w-[366px] h-[438px] bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col justify-between overflow-hidden">
+      <div className="w-full max-w-91.5 h-110 bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col justify-between overflow-hidden">
       {/* Top Image */}
-      <div className="w-full h-[180px] rounded-xl overflow-hidden shrink-0">
+      <div className="w-full h-45rounded-xl overflow-hidden shrink-0">
        {image}
       </div>
 

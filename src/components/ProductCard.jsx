@@ -2,9 +2,9 @@
 
 const ProductCard = ({ icon, title, description, linkText = "See More" }) => {
   return (
-    <div className="w-full max-w-[362px] h-[351px] rounded-2xl bg-sText p-8 shadow-sm border border-gray-100 transition-all hover:shadow-md">
+    <div className="w-full max-w-90.5 h-88 rounded-2xl bg-sText p-8 shadow-sm border border-gray-100 transition-all hover:shadow-md">
       {/* Top Icon Box */}
-      <div className="flex h-[66px] w-[66px] items-center justify-center rounded-2xl bg-sText">
+      <div className="flex h-16.5 w-16.5items-center justify-center rounded-2xl bg-sText">
         {typeof icon === "string" ? (
           <img src={icon} alt={title} className="h-10 w-10 object-contain" />
         ) : (

@@ -4,9 +4,9 @@ const IndustriesCard = ({ imageSrc, title, description, linkText
 }) => {
   return (
     <>
-    <div className="w-[346px] h-[440px] rounded-2xl bg-white shadow-xl flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl">
+    <div className="w-86.5 h-110rounded-2xl bg-white shadow-xl flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl">
       {/* Upper Section: Image Container */}
-      <div className="h-[212px] w-full p-4 pb-2">
+      <div className="h-53 w-full p-4 pb-2">
         <div className="w-full h-full rounded-xl overflow-hidden">
           <img 
             src={imageSrc} 

@@ -5,6 +5,9 @@ import PricingCard from "./components/PricingCard";
 import ProductCard from "./components/ProductCard";
 import ClientsCard from "./components/ClientsCard";
 import IndustriesCard from "./components/IndustriesCard";
+import Imasge from "./components/Imasge";
+import img from "../public/Image/img.png"
+import nature from "../public/Image/Nature.jpg"
 
 const App = () => {
   return (
@@ -60,11 +63,13 @@ const App = () => {
     
       <IndustriesCard
        
-        imageSrc="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=600&auto=format&fit=crop" 
+        imageSrc={nature}
         title="FinTech" 
         description="Psum dolor sit amet, consectetur adipiscing elit. Nisi, maecenas orci sit pellentesque eget." 
         linkText="See More" 
       />
+
+      <Imasge imageSrc={img} />
 
 
 
