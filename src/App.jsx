@@ -8,13 +8,15 @@ import IndustriesCard from "./components/IndustriesCard";
 import Imasge from "./components/Imasge";
 import img from "../public/Image/img.png"
 import nature from "../public/Image/Nature.jpg"
+import CounteerCard from "./components/CounterCard";
+
 
 const App = () => {
   return (
   
-      <div className=" bg-bgGreen flex flex-wrap gap-3">
+      <>
         <ul className="flex">
-          <ListItem />
+          <ListItem classname= "bg-bgGreen" text="Home" type/>
         </ul>
 
         <Button text="Read More" />
@@ -72,6 +74,13 @@ const App = () => {
       <Imasge imageSrc={img} />
 
 
+    
+      <CounteerCard
+        icon="/Image/img.png" 
+        number="70+"
+        label="Professionals"
+      />
+    
 
 
 
@@ -80,7 +89,9 @@ const App = () => {
 
 
 
-      </div>
+
+
+      </>
    
   );
 };

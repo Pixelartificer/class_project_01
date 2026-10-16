@@ -2,7 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100..900&family=Roboto:wght@100..900&display=swap");
 
-
 @theme {
   --color-bgGreen: #2C83BB;
   --color-bgWhite: #2C83BB;
@@ -21,7 +20,7 @@
   --text-text16: 16px;
   --text-text14: 14px;
 
-   --font-inter: "Inter", sans-serif;
-   --font-raleway: "Raleway", sans-serif; 
-   --font-roboto: "Roboto", sans-serif; 
+  --font-inter: "Inter", sans-serif;
+  --font-raleway: "Raleway", sans-serif; 
+  --font-roboto: "Roboto", sans-serif; 
 }
