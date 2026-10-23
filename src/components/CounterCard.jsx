@@ -1,15 +1,15 @@
 
 
-const CounteerCard = ({icon, number, label}) => {
+const CounteerCard = ({imageSrc, number, label, alt, className}) => {
   return (
     <>
       <div className="flex items-center gap-6 rounded-2xl bg-white p-6 shadow-sm border border-gray-100 max-w-xs">
     
-      <div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-3xl bg-[#EEF4F9] p-3">
-        {typeof icon === "string" ? (
-          <img src={icon} alt="icon" className="h-full w-full object-contain" />
+      <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-3xl bg-pText p-3">
+        {typeof imageSrc === "string" ? (
+          <img src={imageSrc} alt={alt} className={className} />
         ) : (
-          icon
+          imageSrc
         )}
       </div>
 

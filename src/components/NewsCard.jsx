@@ -7,7 +7,7 @@ const NewsCard = ({image, title, authorName, authorImg, date, description}) => {
     <>
       <div className="w-full max-w-91.5 h-110 bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col justify-between overflow-hidden">
       {/* Top Image */}
-      <div className="w-full h-45rounded-xl overflow-hidden shrink-0">
+      <div className="w-full h-45rounded-xl overflow-hidden shrink-0 ">
        {image}
       </div>
 
@@ -22,7 +22,7 @@ const NewsCard = ({image, title, authorName, authorImg, date, description}) => {
           {/* Author and Date Meta Info */}
           <div className="flex items-center gap-4 mt-3 mb-3 text-sm text-blackText">
             {/* Author */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ">
              <img 
                   src={authorImg} 
                   alt={authorName} 
