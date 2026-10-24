@@ -1,8 +1,8 @@
 
 
-const Flex = ({children}) => {
+const Flex = ({children, className}) => {
   return (
-    <div className="flex items-center justify-between">
+    <div className={`flex items-center justify-between ${className}`}>
       {children}
     </div>
   )

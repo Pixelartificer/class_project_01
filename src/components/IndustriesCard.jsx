@@ -1,10 +1,9 @@
 import { FiChevronRight } from 'react-icons/fi';
 
-const IndustriesCard = ({ imageSrc, title, description, linkText
-}) => {
+const IndustriesCard = ({ imageSrc, title, description, linkText}) => {
   return (
     <>
-    <div className="w-86.5 h-110rounded-2xl bg-white shadow-xl flex flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl">
+    <div className="w-86.5 h-110rounded-2xl bg-white shadow-xl flex flex-col rounded-2 overflow-hidden transition-all duration-300 hover:shadow-2xl">
       {/* Upper Section: Image Container */}
       <div className="h-53 w-full p-4 pb-2">
         <div className="w-full h-full rounded-xl overflow-hidden">
@@ -20,12 +19,12 @@ const IndustriesCard = ({ imageSrc, title, description, linkText
       <div className="flex-1 px-7 py-5 flex flex-col justify-between">
         <div>
           {/* Title */}
-          <h3 className="font-inter text-text22 font-semibold text-blackText leading-tight">
+          <h3 className="text-text22 font-semibold text-blackText leading-tight font-raleway">
             {title}
           </h3>
           
           {/* Description */}
-          <p className="mt-4 font-roboto text-text16 leading-relaxed text-lightBlackText">
+          <p className="mt-4 pb-6.5 font-roboto text-text16 leading-relaxed text-lightBlackText">
             {description}
           </p>
         </div>

@@ -4,6 +4,7 @@
 
 @theme {
   --color-bgGreen: #2C83BB;
+  --color-heroBg: #0D554C;
   --color-bgWhite: #2C83BB;
   --color-pText: #EEF4F9;
   --color-sText: #ffffffe6;
@@ -11,10 +12,14 @@
   --color-lightBlackText: #495E6C;
   --color-blueText: #2C83BB;
   --color-darkBlueText: #112F42;
+  --color-sectionBg: #CFDDDB;
+  --color-sectionBg01: #F3F3F3;
+  
 
   --text-text52: 52px;
   --text-text48: 48px;
   --text-text36: 36px;
+  --text-text30: 30px;
   --text-text22: 22px;
   --text-text18: 18px;
   --text-text16: 16px;

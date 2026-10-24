@@ -15,10 +15,10 @@ const CounteerCard = ({imageSrc, number, label, alt, className}) => {
 
      
       <div>
-        <h2 className="font-inter text-text48 font-bold text-blueText leading-none">
+        <h2 className="font-inter text-text30 font-bold text-blueText leading-none">
           {number}
         </h2>
-        <p className="mt-2 font-roboto text-text18 font-medium text-lightBlackText">
+        <p className="mt-2 font-roboto text-text16 font-medium text-lightBlackText">
           {label}
         </p>
       </div>
