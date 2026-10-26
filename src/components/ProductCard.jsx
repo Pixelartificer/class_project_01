@@ -1,15 +1,11 @@
+import Image from "../components/Image";
 
-
-const ProductCard = ({ icon, title, description, linkText = "See More" }) => {
+const ProductCard = ({ imageSrc, imageAlt, title, description, linkText }) => {
   return (
     <div className="w-full max-w-90.5 h-88 rounded-2xl bg-sText p-8 shadow-sm border border-gray-100 transition-all hover:shadow-md">
-      {/* Top Icon Box */}
-      <div className="flex h-16.5 w-16.5items-center justify-center rounded-2xl bg-sText">
-        {typeof icon === "string" ? (
-          <img src={icon} alt={title} className="h-10 w-10 object-contain" />
-        ) : (
-          icon
-        )}
+    
+      <div className="flex h-16.5 w-16.5 items-center justify-center rounded-2xl bg-sText">
+        <Image imageSrc={imageSrc} imageAlt={title} className="h-10 w-10 object-contain" />
       </div>
 
       {/* Title */}

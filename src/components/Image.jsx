@@ -1,5 +1,5 @@
 
-const Imasge = ({imageSrc, imageAlt, className}) => {
+const Image = ({imageSrc, imageAlt, className}) => {
   return (
   
      <img src={imageSrc} alt={imageAlt} className={className} />
@@ -7,4 +7,4 @@ const Imasge = ({imageSrc, imageAlt, className}) => {
   )
 }
 
-export default Imasge
+export default Image

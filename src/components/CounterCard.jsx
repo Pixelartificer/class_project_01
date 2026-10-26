@@ -1,16 +1,18 @@
+import Image from "../components/Image";
 
-
-const CounteerCard = ({imageSrc, number, label, alt, className}) => {
+const CounteerCard = ({imageSrc, number, label, imageAlt, className}) => {
   return (
     <>
       <div className="flex items-center gap-6 rounded-2xl bg-white p-6 shadow-sm border border-gray-100 max-w-xs">
     
       <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-3xl bg-pText p-3">
-        {typeof imageSrc === "string" ? (
+        {/* {typeof imageSrc === "string" ? (
           <img src={imageSrc} alt={alt} className={className} />
         ) : (
           imageSrc
-        )}
+        )} */}
+
+        <Image imageSrc={imageSrc} imageAlt={imageAlt} className={className}/>
       </div>
 
      

@@ -12,7 +12,7 @@ import counter03 from "../../public/Image/counter03.png";
 const Review = () => {
   return (
     <section className="relative">
-      <div className="bg-[#0D554C] absolute -top-0.5 left-0 -z-10 w-full h-[450px] [clip-path:polygon(0%_0%,100%_0%,100%_100%)]"></div>
+      <div className="bg-heroBg absolute -top-0.5 left-0 -z-10 w-full h-112.5 [clip-path:polygon(0%_0%,100%_0%,100%_100%)]"></div>
       <Container className="shadow-[0px_-1px_49px_2px_rgba(0,0,0,0.69)] p-12.5 rounded-2xl bg-[#F5F5F5]">
         <div >
           <div>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Container from "../components/Container";
 import Flex from "../components/Flex";
 import Image from "../components/Image";
@@ -9,7 +9,7 @@ import Logo from "../../public/Image/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="bg-heroBg py-4">
+    <nav className="bg-heroBg py-4 pb-40">
       <Container>
         <Flex>
           <div>

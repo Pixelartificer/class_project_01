@@ -3,7 +3,7 @@
 const ClientsCard = ({quote, authorName, authorRole, authorImg, quoteIcon,}) => {
   return (
     <>
-    <div className="relative max-w-sm rounded-3xl bg-white p-8 pt-12 shadow-sm transition-all hover:shadow-md">
+    <div className="relative w-80 rounded-3xl bg-white p-8 pt-12 shadow-sm transition-all hover:shadow-md">
       {/* Top Floating Quote Badge */}
       <div className="absolute -top-7 left-1/2 -translate-x-1/2 flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-sm">
         {quoteIcon ? (
