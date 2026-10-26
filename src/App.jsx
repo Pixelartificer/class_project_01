@@ -9,6 +9,8 @@ import Engaging from "./layouts/Engaging";
 import WeWorkWith from "./layouts/WeWorkWith";
 import Pricing from "./layouts/Pricing";
 import Cients from "./layouts/Cients";
+import UpToDate from "./layouts/UpToDate";
+import News from "./layouts/News";
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
       <WeWorkWith/>
       <Pricing/>
       <Cients/>
+      <UpToDate/>
+      <News/>
     </>
   );
 };
