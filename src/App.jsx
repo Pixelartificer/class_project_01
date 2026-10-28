@@ -11,6 +11,7 @@ import Pricing from "./layouts/Pricing";
 import Cients from "./layouts/Cients";
 import UpToDate from "./layouts/UpToDate";
 import News from "./layouts/News";
+import Footer from "./layouts/Footer";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       <Cients/>
       <UpToDate/>
       <News/>
+      <Footer/>
     </>
   );
 };
