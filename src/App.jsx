@@ -1,33 +1,35 @@
+import {
+  createRoutesFromElements, createBrowserRouter, Route, RouterProvider} from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Pages from "./pages/Pages";
+import Services from "./pages/Services";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+    <Route path="/" element={<Home />}> </Route>
+    <Route path="/about" element={<About />}> </Route>
+    <Route path="/pages" element={<Pages />}> </Route>
+    <Route path="/services" element={<Services />}> </Route>
+    <Route path="/blog" element={<Blog />}> </Route>
+    <Route path="/contact" element={<Contact />}> </Route>
+    </Route>
+      
+    
+    
+  )
+);
 
 
-import Navbar from "./layouts/Navbar";
-import Banner from "./layouts/Banner";
-import Review from "./layouts/Review";
-import IndustriesCardSection from "./layouts/IndustriesCardSection";
-import Product from "./layouts/Product";
-import Engaging from "./layouts/Engaging";
-import WeWorkWith from "./layouts/WeWorkWith";
-import Pricing from "./layouts/Pricing";
-import Cients from "./layouts/Cients";
-import UpToDate from "./layouts/UpToDate";
-import News from "./layouts/News";
-import Footer from "./layouts/Footer";
+
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Banner />
-      <Review />
-      <IndustriesCardSection />
-      <Product />
-      <Engaging />
-      <WeWorkWith/>
-      <Pricing/>
-      <Cients/>
-      <UpToDate/>
-      <News/>
-      <Footer/>
+   <RouterProvider router={router} />
     </>
   );
 };

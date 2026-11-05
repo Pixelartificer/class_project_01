@@ -5,31 +5,54 @@ import SubHeading from "../components/SubHeading";
 import PText from "../components/PText";
 import Button from "../components/Button";
 
-
-
-
-
-
-
-
 const Engaging = () => {
   return (
-    <section>
-     <Container className="flex justify-center items-center gap-10 pt-27.5 pb-17.5">
-       <div className="w-[50%]">
-    <Image imageSrc={EngagingImg} imageAlt="Engaging Image"/>
-      </div>
+    <>
+      {/* 
+        Responsive Engaging Component:
+        - Mobile & Tablet: Vertical stacking (flex-col), centered alignment, and comfortable responsive padding.
+        - Desktop (lg:): Side-by-side layout with custom spacing and left alignment.
+      */}
+      <section>
+        <Container className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-16 py-16 lg:pt-27.5 lg:pb-17.5">
+          
+          {/* Image Area */}
+          <div className="w-full lg:w-[50%] flex justify-center">
+            <Image 
+              imageSrc={EngagingImg} 
+              imageAlt="Engaging Illustration" 
+              className="w-full max-w-md lg:max-w-none object-contain"
+            />
+          </div>
 
+          {/* Content Area */}
+          <div className="w-full lg:w-[50%] text-center lg:text-left">
+            <SubHeading 
+              text="Don’t just engage, make it engaging." 
+              className="text-left"
+            />
+            
+            <PText 
+              text="Since 1999. For millions of users. We transform businesses with powerful and adaptable digital solutions." 
+              className="text-left pt-6 lg:pt-11 pb-4 lg:pb-8"
+            />
+            
+            <PText 
+              text="Psum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra purus imperdiet a. Ut nisl est at ultricies neque ornare tellus tellus enim." 
+              className="text-left pb-6 lg:pb-11"
+            />
 
-      <div className="w-[50%]">
-        <SubHeading text="Don’t just engage, make it engaging." className="text-left"></SubHeading>
-        <PText text="Since 1999. For millions of users. We transform businesses with powerful and adaptable digital solutions." className="text-left pt-11 pb-8"></PText>
-        <PText text="Psum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra purus imperdiet a. Ut nisl est at ultricies neque ornare tellus tellus enim." className="text-left pb-11"></PText>
+            <div className="flex justify-start">
+              <Button 
+                text="Read More" 
+                className="py-3 px-6 bg-blueText hover:bg-[#2060a0] text-white rounded-xl transition-colors font-raleway font-medium shadow-sm cursor-pointer text-text14 sm:text-text16"
+              />
+            </div>
+          </div>
 
-        <Button text="Read More"></Button>
-      </div>
-     </Container>
-    </section>
+        </Container>
+      </section>
+    </>
   );
 };
 

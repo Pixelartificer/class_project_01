@@ -8,43 +8,58 @@ import ProductImg03 from "../../public/Image/ProductImg03.png";
 
 const WeWorkWith = () => {
   return (
-    <section className="bg-sectionBg01 pt-28 pb-36">
-      <Container>
-        <SubHeading
-          text="The Product we work with."
-          className="flex justify-center items-center pb-14.5"
-        ></SubHeading>
-
-        <Flex>
-          <ProductCard
-            imageSrc={ProductImg01}
-            imageAlt="Consulting"
-            title="Consulting"
-            description="Psum dolor sit amet, consectetur adipiscing elit. Nisi, maecenas orci sit pellentesque eget."
-            linkText="See More"
-            className=""
+    <>
+      {/* 
+        Responsive WeWorkWith Section Component:
+        - Mobile & Tablet: Stacks or wraps neatly depending on screen width.
+        - Desktop (lg:): All three product cards stay perfectly in a single row.
+      */}
+      <section className="bg-sectionBg01 py-16 lg:pt-28 lg:pb-36">
+        <Container>
+          {/* Section Heading */}
+          <SubHeading
+            text="The Product we work with."
+            className="flex justify-center items-center pb-10 lg:pb-14.5 text-center"
           />
 
-          <ProductCard
-            imageSrc={ProductImg02}
-            imageAlt="Security"
-            title="Security"
-            description="Psum dolor sit amet, consectetur adipiscing elit. Nisi, maecenas orci sit pellentesque eget."
-            linkText="See More"
-            className=""
-          />
+          {/* Product Cards Container - Forced 3 in a row on desktop */}
+          <Flex className="flex-col md:flex-row justify-center items-center lg:justify-between gap-6 lg:gap-7.5 w-full">
+            <div className="w-full md:w-[32%] flex justify-center">
+              <ProductCard
+                imageSrc={ProductImg01}
+                imageAlt="Consulting"
+                title="Consulting"
+                description="Psum dolor sit amet, consectetur adipiscing elit. Nisi, maecenas orci sit pellentesque eget."
+                linkText="See More"
+                className="w-full"
+              />
+            </div>
 
-          <ProductCard
-            imageSrc={ProductImg03}
-            imageAlt="Management & support"
-            title="Management & support"
-            description="Psum dolor sit amet, consectetur adipiscing elit. Nisi, maecenas orci sit pellentesque eget."
-            linkText="See More"
-            className=""
-          />
-        </Flex>
-      </Container>
-    </section>
+            <div className="w-full md:w-[32%] flex justify-center">
+              <ProductCard
+                imageSrc={ProductImg02}
+                imageAlt="Security"
+                title="Security"
+                description="Psum dolor sit amet, consectetur adipiscing elit. Nisi, maecenas orci sit pellentesque eget."
+                linkText="See More"
+                className="w-full"
+              />
+            </div>
+
+            <div className="w-full md:w-[32%] flex justify-center">
+              <ProductCard
+                imageSrc={ProductImg03}
+                imageAlt="Management & support"
+                title="Management & support"
+                description="Psum dolor sit amet, consectetur adipiscing elit. Nisi, maecenas orci sit pellentesque eget."
+                linkText="See More"
+                className="w-full"
+              />
+            </div>
+          </Flex>
+        </Container>
+      </section>
+    </>
   );
 };
 
