@@ -31,7 +31,7 @@ const Footer = () => {
                 className="text-white text-left! pt-4 lg:pt-6.5 pb-6 lg:pb-8 leading-6 lg:leading-7 text-text14 lg:text-text16"
               />
               
-              <Flex className="justify-start gap-5 text-[20px] lg:text-[24px] text-white">
+              <Flex className="justify-start gap-5 text-text20 lg:text-text24 text-white">
                 <a href="#" className="hover:text-blueText transition-colors" aria-label="Facebook">
                   <FaFacebookF />
                 </a>
